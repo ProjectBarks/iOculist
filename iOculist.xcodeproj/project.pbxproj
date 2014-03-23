@@ -70,6 +70,8 @@
 		5CEA127118DF0841001DD75C /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA127018DF0841001DD75C /* UIImage+animatedGIF.m */; };
 		5CEA127418DF0874001DD75C /* glassesGIFVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA127318DF0874001DD75C /* glassesGIFVC.m */; };
 		5CEA127618DF0B67001DD75C /* astigmatism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA127518DF0B67001DD75C /* astigmatism.jpg */; };
+		5CEA127A18DF104A001DD75C /* OpenEars.framework in Resources */ = {isa = PBXBuildFile; fileRef = 5C28133518DE5600002257EB /* OpenEars.framework */; };
+		5CEA127B18DF104A001DD75C /* Slt.framework in Resources */ = {isa = PBXBuildFile; fileRef = 5C28133618DE5600002257EB /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +163,7 @@
 		5CEA127218DF0874001DD75C /* glassesGIFVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glassesGIFVC.h; sourceTree = "<group>"; };
 		5CEA127318DF0874001DD75C /* glassesGIFVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glassesGIFVC.m; sourceTree = "<group>"; };
 		5CEA127518DF0B67001DD75C /* astigmatism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = astigmatism.jpg; sourceTree = "<group>"; };
+		5CEA127718DF101D001DD75C /* iOculist.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = iOculist.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 		5C2812B818DE3652002257EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CEA127718DF101D001DD75C /* iOculist.xcodeproj */,
 				5CEA126B18DF0442001DD75C /* QuartzCore.framework */,
 				5CEA126918DF0436001DD75C /* MobileCoreServices.framework */,
 				5CEA124518DED733001DD75C /* AssetsLibrary.framework */,
@@ -425,6 +429,11 @@
 			name = GIFs;
 			sourceTree = "<group>";
 		};
+		5CEA127818DF101D001DD75C /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,6 +498,12 @@
 			mainGroup = 5C2812AD18DE3652002257EB;
 			productRefGroup = 5C2812B718DE3652002257EB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5CEA127818DF101D001DD75C /* Products */;
+					ProjectRef = 5CEA127718DF101D001DD75C /* iOculist.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C2812B518DE3652002257EB /* iOculist */,
@@ -502,6 +517,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA127A18DF104A001DD75C /* OpenEars.framework in Resources */,
+				5CEA127B18DF104A001DD75C /* Slt.framework in Resources */,
 				5CEA125518DEE689001DD75C /* stopMoving.mp3 in Resources */,
 				5CEA125618DEE689001DD75C /* astigmatismInstructions.mp3 in Resources */,
 				5C2812F218DE452B002257EB /* cb12.gif in Resources */,

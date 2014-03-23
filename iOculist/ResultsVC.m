@@ -30,9 +30,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.visualAcuityLabel.text = [NSString stringWithFormat:@"Visual Acuity: %@", self.eyeExam.acuityScore];
-    self.colorBlindnessLabel.text = [NSString stringWithFormat:@"Color Blindness: %@", self.eyeExam.colorBlindnessScore];
-    self.astigmatismLabel.text = [NSString stringWithFormat:@"Astigmatism: %@", self.eyeExam.astigmatismScore];
+    self.visualAcuityLabel.text = self.eyeExam.acuityScore;
+    self.colorBlindnessLabel.text = self.eyeExam.colorBlindnessScore;
+    self.astigmatismLabel.text = self.eyeExam.astigmatismScore;
+    
+    if ([self.eyeExam.acuityScore isEqualToString:@"20/200"] || [self.eyeExam.acuityScore isEqualToString:@"20/100"] || [self.eyeExam.acuityScore isEqualToString:@"20/70"]) {
+        self.visualAcuityLabel.textColor = [UIColor redColor];
+    }
+    
+    if ([self.eyeExam.colorBlindnessScore isEqualToString:@"YES"]) {
+        self.colorBlindnessLabel.textColor = [UIColor redColor];
+    }
+    
+    if ([self.eyeExam.astigmatismScore isEqualToString:@"YES"]) {
+        self.astigmatismLabel.textColor = [UIColor redColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning

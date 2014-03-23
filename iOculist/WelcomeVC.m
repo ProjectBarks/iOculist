@@ -7,10 +7,12 @@
 //
 
 #import "WelcomeVC.h"
+#import "OEOfflineListener.h"
 
 @interface WelcomeVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *logoImage;
 @property (weak, nonatomic) IBOutlet UIButton *tapToStartButton;
+@property (strong, nonatomic) OEOfflineListener *listener;
 @end
 
 @implementation WelcomeVC
@@ -20,6 +22,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.listener = [[OEOfflineListener alloc] initWithWords:@[@"TEST"] VC:self];
     }
     return self;
 }
@@ -34,7 +37,7 @@
 - (void)setInitialPositions
 {
     self.logoImage.alpha = 0;
-    self.tapToStartButton.transform = CGAffineTransformMakeTranslation(0, 300);
+    self.tapToStartButton.transform = CGAffineTransformMakeTranslation(0, 600);
 }
 
 - (void)performAnimations

@@ -51,6 +51,25 @@
 		5C28133A18DE5600002257EB /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C28133618DE5600002257EB /* Slt.framework */; };
 		5C28133D18DE76F0002257EB /* EyeExam.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28133C18DE76F0002257EB /* EyeExam.m */; };
 		5C28134118DE7AA0002257EB /* ResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28134018DE7AA0002257EB /* ResultsVC.m */; };
+		5CEA124218DED722001DD75C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA124118DED722001DD75C /* CoreImage.framework */; };
+		5CEA124418DED72A001DD75C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA124318DED72A001DD75C /* ImageIO.framework */; };
+		5CEA124618DED733001DD75C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA124518DED733001DD75C /* AssetsLibrary.framework */; };
+		5CEA124B18DED9F1001DD75C /* EditedBeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA124918DED9F1001DD75C /* EditedBeep.mp3 */; };
+		5CEA124C18DED9F1001DD75C /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA124A18DED9F1001DD75C /* glasses.png */; };
+		5CEA125218DEE689001DD75C /* pleaseRepeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA124D18DEE689001DD75C /* pleaseRepeat.mp3 */; };
+		5CEA125318DEE689001DD75C /* afterYouHearTheBeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA124E18DEE689001DD75C /* afterYouHearTheBeep.mp3 */; };
+		5CEA125418DEE689001DD75C /* walkBackwards.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA124F18DEE689001DD75C /* walkBackwards.mp3 */; };
+		5CEA125518DEE689001DD75C /* stopMoving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125018DEE689001DD75C /* stopMoving.mp3 */; };
+		5CEA125618DEE689001DD75C /* astigmatismInstructions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125118DEE689001DD75C /* astigmatismInstructions.mp3 */; };
+		5CEA125818DEECAE001DD75C /* clickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125718DEECAE001DD75C /* clickSound.mp3 */; };
+		5CEA125C18DEFDBC001DD75C /* rulerInst.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125918DEFDBC001DD75C /* rulerInst.png */; };
+		5CEA125D18DEFDBC001DD75C /* positionInst.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125A18DEFDBC001DD75C /* positionInst.png */; };
+		5CEA125E18DEFDBC001DD75C /* glassesInst.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA125B18DEFDBC001DD75C /* glassesInst.gif */; };
+		5CEA126A18DF0436001DD75C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA126918DF0436001DD75C /* MobileCoreServices.framework */; };
+		5CEA126C18DF0442001DD75C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA126B18DF0442001DD75C /* QuartzCore.framework */; };
+		5CEA127118DF0841001DD75C /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA127018DF0841001DD75C /* UIImage+animatedGIF.m */; };
+		5CEA127418DF0874001DD75C /* glassesGIFVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA127318DF0874001DD75C /* glassesGIFVC.m */; };
+		5CEA127618DF0B67001DD75C /* astigmatism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CEA127518DF0B67001DD75C /* astigmatism.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +140,27 @@
 		5C28133C18DE76F0002257EB /* EyeExam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeExam.m; sourceTree = "<group>"; };
 		5C28133F18DE7AA0002257EB /* ResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsVC.h; sourceTree = "<group>"; };
 		5C28134018DE7AA0002257EB /* ResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsVC.m; sourceTree = "<group>"; };
+		5CEA124118DED722001DD75C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		5CEA124318DED72A001DD75C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5CEA124518DED733001DD75C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5CEA124918DED9F1001DD75C /* EditedBeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EditedBeep.mp3; sourceTree = "<group>"; };
+		5CEA124A18DED9F1001DD75C /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
+		5CEA124D18DEE689001DD75C /* pleaseRepeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pleaseRepeat.mp3; sourceTree = "<group>"; };
+		5CEA124E18DEE689001DD75C /* afterYouHearTheBeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = afterYouHearTheBeep.mp3; sourceTree = "<group>"; };
+		5CEA124F18DEE689001DD75C /* walkBackwards.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkBackwards.mp3; sourceTree = "<group>"; };
+		5CEA125018DEE689001DD75C /* stopMoving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stopMoving.mp3; sourceTree = "<group>"; };
+		5CEA125118DEE689001DD75C /* astigmatismInstructions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = astigmatismInstructions.mp3; sourceTree = "<group>"; };
+		5CEA125718DEECAE001DD75C /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickSound.mp3; sourceTree = "<group>"; };
+		5CEA125918DEFDBC001DD75C /* rulerInst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rulerInst.png; sourceTree = "<group>"; };
+		5CEA125A18DEFDBC001DD75C /* positionInst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positionInst.png; sourceTree = "<group>"; };
+		5CEA125B18DEFDBC001DD75C /* glassesInst.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = glassesInst.gif; sourceTree = "<group>"; };
+		5CEA126918DF0436001DD75C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5CEA126B18DF0442001DD75C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5CEA126F18DF0841001DD75C /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		5CEA127018DF0841001DD75C /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		5CEA127218DF0874001DD75C /* glassesGIFVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glassesGIFVC.h; sourceTree = "<group>"; };
+		5CEA127318DF0874001DD75C /* glassesGIFVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glassesGIFVC.m; sourceTree = "<group>"; };
+		5CEA127518DF0B67001DD75C /* astigmatism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = astigmatism.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +168,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA126C18DF0442001DD75C /* QuartzCore.framework in Frameworks */,
+				5CEA126A18DF0436001DD75C /* MobileCoreServices.framework in Frameworks */,
+				5CEA124418DED72A001DD75C /* ImageIO.framework in Frameworks */,
+				5CEA124618DED733001DD75C /* AssetsLibrary.framework in Frameworks */,
+				5CEA124218DED722001DD75C /* CoreImage.framework in Frameworks */,
 				5C28133118DE55C9002257EB /* AVFoundation.framework in Frameworks */,
 				5C28133A18DE5600002257EB /* Slt.framework in Frameworks */,
 				5C28132F18DE55C2002257EB /* AudioToolbox.framework in Frameworks */,
@@ -173,6 +218,11 @@
 		5C2812B818DE3652002257EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CEA126B18DF0442001DD75C /* QuartzCore.framework */,
+				5CEA126918DF0436001DD75C /* MobileCoreServices.framework */,
+				5CEA124518DED733001DD75C /* AssetsLibrary.framework */,
+				5CEA124318DED72A001DD75C /* ImageIO.framework */,
+				5CEA124118DED722001DD75C /* CoreImage.framework */,
 				5C28133018DE55C9002257EB /* AVFoundation.framework */,
 				5C28132E18DE55C2002257EB /* AudioToolbox.framework */,
 				5C2812B918DE3652002257EB /* Foundation.framework */,
@@ -186,6 +236,19 @@
 		5C2812BF18DE3652002257EB /* iOculist */ = {
 			isa = PBXGroup;
 			children = (
+				5CEA126D18DF081E001DD75C /* GIFs */,
+				5CEA127518DF0B67001DD75C /* astigmatism.jpg */,
+				5CEA125918DEFDBC001DD75C /* rulerInst.png */,
+				5CEA125A18DEFDBC001DD75C /* positionInst.png */,
+				5CEA125B18DEFDBC001DD75C /* glassesInst.gif */,
+				5CEA125718DEECAE001DD75C /* clickSound.mp3 */,
+				5CEA124D18DEE689001DD75C /* pleaseRepeat.mp3 */,
+				5CEA124E18DEE689001DD75C /* afterYouHearTheBeep.mp3 */,
+				5CEA124F18DEE689001DD75C /* walkBackwards.mp3 */,
+				5CEA125018DEE689001DD75C /* stopMoving.mp3 */,
+				5CEA125118DEE689001DD75C /* astigmatismInstructions.mp3 */,
+				5CEA124918DED9F1001DD75C /* EditedBeep.mp3 */,
+				5CEA124A18DED9F1001DD75C /* glasses.png */,
 				5C2812CB18DE3652002257EB /* Main.storyboard */,
 				5C2812D118DE3652002257EB /* Images.xcassets */,
 				5C28133218DE5600002257EB /* Framework */,
@@ -270,6 +333,8 @@
 			children = (
 				5C28131718DE47AD002257EB /* WelcomeVC.h */,
 				5C28131818DE47AD002257EB /* WelcomeVC.m */,
+				5CEA127218DF0874001DD75C /* glassesGIFVC.h */,
+				5CEA127318DF0874001DD75C /* glassesGIFVC.m */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -351,6 +416,15 @@
 			name = Results;
 			sourceTree = "<group>";
 		};
+		5CEA126D18DF081E001DD75C /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA126F18DF0841001DD75C /* UIImage+animatedGIF.h */,
+				5CEA127018DF0841001DD75C /* UIImage+animatedGIF.m */,
+			);
+			name = GIFs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,26 +502,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA125518DEE689001DD75C /* stopMoving.mp3 in Resources */,
+				5CEA125618DEE689001DD75C /* astigmatismInstructions.mp3 in Resources */,
 				5C2812F218DE452B002257EB /* cb12.gif in Resources */,
+				5CEA125E18DEFDBC001DD75C /* glassesInst.gif in Resources */,
 				5C28130518DE4710002257EB /* cb26.gif in Resources */,
 				5C28130B18DE4710002257EB /* cb6.gif in Resources */,
 				5C28130718DE4710002257EB /* cb16.gif in Resources */,
 				5C28130E18DE4710002257EB /* cb3.gif in Resources */,
 				5C28130418DE4710002257EB /* cb42.gif in Resources */,
 				5C28130218DE4710002257EB /* cb45rg.gif in Resources */,
+				5CEA125D18DEFDBC001DD75C /* positionInst.png in Resources */,
+				5CEA127618DF0B67001DD75C /* astigmatism.jpg in Resources */,
+				5CEA125818DEECAE001DD75C /* clickSound.mp3 in Resources */,
 				5C2812D218DE3652002257EB /* Images.xcassets in Resources */,
 				5C28130D18DE4710002257EB /* cb15.gif in Resources */,
+				5CEA125218DEE689001DD75C /* pleaseRepeat.mp3 in Resources */,
 				5C28130C18DE4710002257EB /* cb74.gif in Resources */,
 				5C28133818DE5600002257EB /* AcousticModelSpanish.bundle in Resources */,
 				5C28130A18DE4710002257EB /* cb45.gif in Resources */,
 				5C2812C418DE3652002257EB /* InfoPlist.strings in Resources */,
+				5CEA124B18DED9F1001DD75C /* EditedBeep.mp3 in Resources */,
 				5C28130318DE4710002257EB /* cb5rg.gif in Resources */,
+				5CEA124C18DED9F1001DD75C /* glasses.png in Resources */,
+				5CEA125318DEE689001DD75C /* afterYouHearTheBeep.mp3 in Resources */,
 				5C28133718DE5600002257EB /* AcousticModelEnglish.bundle in Resources */,
 				5C28130818DE4710002257EB /* cb7.gif in Resources */,
 				5C28130918DE4710002257EB /* cb5.gif in Resources */,
+				5CEA125C18DEFDBC001DD75C /* rulerInst.png in Resources */,
 				5C28130618DE4710002257EB /* cb73.gif in Resources */,
 				5C28130F18DE4710002257EB /* cb29.gif in Resources */,
 				5C2812CD18DE3652002257EB /* Main.storyboard in Resources */,
+				5CEA125418DEE689001DD75C /* walkBackwards.mp3 in Resources */,
 				5C28131018DE4710002257EB /* cb8.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,11 +554,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C28131918DE47AD002257EB /* WelcomeVC.m in Sources */,
+				5CEA127118DF0841001DD75C /* UIImage+animatedGIF.m in Sources */,
 				5C28132518DE47DE002257EB /* ColorBlindnessVC.m in Sources */,
 				5C28133D18DE76F0002257EB /* EyeExam.m in Sources */,
 				5C2812CA18DE3652002257EB /* IOAppDelegate.m in Sources */,
 				5C28131F18DE47C6002257EB /* FindDistanceVC.m in Sources */,
 				5C28134118DE7AA0002257EB /* ResultsVC.m in Sources */,
+				5CEA127418DF0874001DD75C /* glassesGIFVC.m in Sources */,
 				5C28132218DE47D0002257EB /* VisualAcuityVC.m in Sources */,
 				5C28131C18DE47B9002257EB /* BeginTestVC.m in Sources */,
 				5C28132D18DE5599002257EB /* OEOfflineListener.m in Sources */,
@@ -692,6 +780,7 @@
 				5C2812EA18DE3652002257EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C2812EB18DE3652002257EB /* Build configuration list for PBXNativeTarget "iOculistTests" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +789,7 @@
 				5C2812ED18DE3652002257EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

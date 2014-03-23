@@ -11,6 +11,8 @@
 #import <OpenEars/PocketsphinxController.h>
 #import <OpenEars/AcousticModel.h>
 #import <OpenEars/OpenEarsEventsObserver.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface OEOfflineListener () <OpenEarsEventsObserverDelegate> {}
 @property (strong, nonatomic) NSArray *words;
@@ -77,12 +79,13 @@
 	// NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
     NSLog(@"Hypothesis: %@", hypothesis);
     NSLog(@"Recognition Score: %@", recognitionScore);
-    if ([recognitionScore integerValue] > -2000 || [hypothesis isEqualToString:self.correctAnswer] || self.tries > 1) {
+    if ([recognitionScore integerValue] > -1000 || [hypothesis isEqualToString:self.correctAnswer] || self.tries > 1) {
         self.hypothesis = hypothesis;
         self.finished = YES;
         self.tries = 1;
     } else {
         self.tries += 1;
+        [self performSelector:@selector(pleaseRepeat) withObject:self afterDelay:1];
     }
 }
 
@@ -96,6 +99,7 @@
 
 - (void) pocketsphinxDidStartListening {
 	NSLog(@"Pocketsphinx is now listening.");
+    [self performSelector:@selector(clickSound) withObject:self afterDelay:4];
 }
 
 - (void) pocketsphinxDidDetectSpeech {
@@ -127,6 +131,26 @@
 }
 - (void) testRecognitionCompleted {
 	// NSLog(@"A test file that was submitted for recognition is now complete.");
+}
+
+- (void)pleaseRepeat
+{
+    NSString *soundFilePath = [NSString stringWithFormat:@"%@/pleaseRepeat.mp3", [[NSBundle mainBundle] resourcePath]];;
+    NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
+    
+    SystemSoundID pleaseRepeat;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &pleaseRepeat);
+    AudioServicesPlaySystemSound(pleaseRepeat);
+}
+
+- (void)clickSound
+{
+    NSString *soundFilePath = [NSString stringWithFormat:@"%@/clickSound.mp3", [[NSBundle mainBundle] resourcePath]];;
+    NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
+    
+    SystemSoundID clickSound;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &clickSound);
+    AudioServicesPlaySystemSound(clickSound);
 }
 
 @end

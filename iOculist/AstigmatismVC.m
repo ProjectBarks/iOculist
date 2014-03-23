@@ -8,6 +8,7 @@
 
 #import "AstigmatismVC.h"
 #import "OEOfflineListener.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AstigmatismVC ()
 @property (strong, nonatomic) OEOfflineListener *listener;
@@ -32,7 +33,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (![self.eyeExam.tests containsObject:@"Astigmatism"]) [self performSegueWithIdentifier:@"results" sender:self];
+    
     // Do any additional setup after loading the view.
+    [self astigmatismInstructions];
+    [self performSelector:@selector(setUp) withObject:self afterDelay:2];
+}
+
+- (void)setUp
+{
     self.listener = [[OEOfflineListener alloc] initWithWords:@[@"YES", @"NO"] VC:self];
     [self performSelectorInBackground:@selector(waitForListener) withObject:self];
 }
@@ -47,7 +57,7 @@
         self.eyeExam.astigmatismScore = @"No";
     }
     
-    [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:NO];
+    [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:YES];
 }
 
 - (void)transition
@@ -71,6 +81,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)astigmatismInstructions
+{
+    NSString *soundFilePath = [NSString stringWithFormat:@"%@/astigmatismInstructions.mp3", [[NSBundle mainBundle] resourcePath]];;
+    NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
+    
+    SystemSoundID astigmatismInstructions;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &astigmatismInstructions);
+    AudioServicesPlaySystemSound(astigmatismInstructions);
+}
 
 #pragma mark - Navigation
 
@@ -81,6 +100,7 @@
     // Pass the selected object to the new view controller.
     [[segue destinationViewController] setEyeExam:self.eyeExam];
 }
+
 
 
 @end

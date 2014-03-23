@@ -40,11 +40,13 @@
 {
     [super viewDidLoad];
     
+    if (![self.eyeExam.tests containsObject:@"Color Blindness"]) [self performSegueWithIdentifier:@"astigmatism" sender:self];
+    
     self.score = 0;
     self.images = [[NSMutableDictionary alloc] init];
     [self.images setValuesForKeysWithDictionary:[self getImages]];
-    NSArray *keys = [self.images allKeys];
-    self.listener = [[OEOfflineListener alloc] initWithWords:keys VC:self];
+    NSArray *values = [self.images allValues];
+    self.listener = [[OEOfflineListener alloc] initWithWords:values VC:self];
     [self loadImages];
 }
 
@@ -52,14 +54,27 @@
 {
     while (!self.listener.finished) {}
     if ([self.listener.hypothesis isEqualToString:self.correctAnswer]) self.score += 1;
-    if (self.images.count == 0) {
-        [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:NO];
+    if ([[self.images allKeys] count] == 0) {
+        NSLog(@"Do Not Load Images");
+        if (self.score < 2) {
+            self.eyeExam.colorBlindnessScore = @"Yes";
+        } else {
+            self.eyeExam.colorBlindnessScore = @"No";
+        }
+        
+        [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:YES];
+    } else {
+        NSLog(@"Load images");
+        self.listener.finished = NO;
+        [self loadImages];
     }
 }
 
 - (void)transition
 {
     NSLog(@"Transitioning");
+    NSLog(@"Score: %d", self.score);
+    NSLog(@"Colorblind: %@", self.eyeExam.colorBlindnessScore);
     [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         
         for (UIView *view in self.view.subviews) {
@@ -78,8 +93,10 @@
     
     self.cbImageView.image = [UIImage imageNamed:[keys firstObject]];
     self.correctAnswer = [values firstObject];
+    if ([self.images objectForKey:[keys firstObject]]) {
+        [self.images removeObjectForKey:[keys firstObject]];
+    }
     
-    [self.images removeObjectForKey:[keys firstObject]];
     [self performSelectorInBackground:@selector(waitForListener) withObject:self];
 }
 
@@ -98,7 +115,6 @@
     }
     
     NSDictionary *result = images;
-    NSLog(@"result count: %d", (int)result.count);
     return result;
 }
                                 
@@ -132,6 +148,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 #pragma mark - Navigation

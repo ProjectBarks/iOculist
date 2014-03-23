@@ -9,6 +9,7 @@
 #import "VisualAcuityVC.h"
 #import "OEOfflineListener.h"
 #import "ColorBlindnessVC.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface VisualAcuityVC ()
 @property (weak, nonatomic) IBOutlet UILabel *snellsonText;
@@ -23,19 +24,47 @@
 - (NSString *)generateText:(int)length
 {
     NSString *text = @"";
+    NSString *answer = @"";
     for (int i = 0; i < length; i++) {
         int index = arc4random_uniform((int)self.acceptableCharacters.count);
-        text = [text stringByAppendingString:[NSString stringWithFormat:@"%@ ", self.acceptableCharacters[index]]];
+        NSString *number = self.acceptableCharacters[index];
+        int i;
+        if ([number isEqualToString:@"ONE"]) {
+            i = 1;
+        } else if  ([number isEqualToString:@"TWO"]) {
+            i = 2;
+        } else if  ([number isEqualToString:@"THREE"]) {
+            i = 3;
+        } else if  ([number isEqualToString:@"FOUR"]) {
+            i = 4;
+        } else if  ([number isEqualToString:@"FIVE"]) {
+            i = 5;
+        } else if  ([number isEqualToString:@"SIX"]) {
+            i = 6;
+        } else if  ([number isEqualToString:@"SEVEN"]) {
+            i = 7;
+        } else if  ([number isEqualToString:@"EIGHT"]) {
+            i = 8;
+        } else if  ([number isEqualToString:@"NINE"]) {
+            i = 9;
+        } else {
+            i = 0;
+        }
+        
+        text = [text stringByAppendingString:[NSString stringWithFormat:@"%d ", i]];
+        answer = [answer stringByAppendingString:[NSString stringWithFormat:@"%@ ", number]];
     }
     
     if ([text length] > 0) {
         text = [text substringToIndex:[text length] - 1];
+        answer = [answer substringToIndex:[answer length] - 1];
     } else {
         //no characters to delete... attempting to do so will result in a crash
     }
-    
-    self.correctAnswer = text;
-    self.listener.correctAnswer = text;
+
+    self.correctAnswer = answer;
+    self.listener.correctAnswer = answer;
+    NSLog(@"Answer: %@", answer);
     return text;
 }
 
@@ -56,7 +85,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (![self.eyeExam.tests containsObject:@"Acuity"]) [self performSegueWithIdentifier:@"colorBlindness" sender:self];
+    
+    [self performSelector:@selector(instructionsSound) withObject:self afterDelay:1];
     // Do any additional setup after loading the view.
+    [self performSelector:@selector(setUp) withObject:self afterDelay:3.5];
+}
+
+- (void)setUp
+{
     self.listener = [[OEOfflineListener alloc] initWithWords:self.acceptableCharacters VC:self];
     [self startTest];
 }
@@ -66,7 +104,9 @@
     NSLog(@"Starting Test");
     NSString *text = [self generateText:round(200.0/self.visionEstimate)];
     self.snellsonText.text = text;
-    self.snellsonText.font = [UIFont systemFontOfSize:(self.visionEstimate/11)*8.5371];
+    float size = (self.visionEstimate/11)*17.0742;
+    NSLog(@"Size: %f", size);
+    self.snellsonText.font = [UIFont systemFontOfSize:size];
     [self performSelectorInBackground:@selector(waitForListener) withObject:self];
     NSLog(@"Finishing Starting Test");
 }
@@ -77,10 +117,12 @@
     while (!self.listener.finished) {}
     self.listener.finished = NO;
     
+    NSLog(@"donelist");
+    
     if (![self.listener.hypothesis isEqualToString:self.correctAnswer]) {
         NSLog(@"Inorrect");
         self.eyeExam.acuityScore = [NSString stringWithFormat:@"20/%d", self.visionEstimate];
-        [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:YES];
     } else {
         NSLog(@"Correct");
         if (self.visionEstimate > 20) {
@@ -98,11 +140,11 @@
                 self.visionEstimate = 20;
             }
             
-            [self startTest];
+            [self performSelectorOnMainThread:@selector(startTest) withObject:self waitUntilDone:YES];
         } else {
             NSLog(@"20/20 Vision");
             self.eyeExam.acuityScore = @"20/20";
-            [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:NO];
+            [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:YES];
         }
     }
 }
@@ -129,7 +171,7 @@
 
 - (NSArray *)acceptableCharacters
 {
-    if (!_acceptableCharacters) _acceptableCharacters =  @[@"E", @"F", @"O", @"L", @"A", @"H", @"I", @"M", @"Q", @"R", @"S"];
+    if (!_acceptableCharacters) _acceptableCharacters =  @[@"ONE", @"TWO", @"THREE", @"FOUR", @"FIVE", @"SIX", @"SEVEN", @"EIGHT", @"NINE"];
     return _acceptableCharacters;
 }
 
@@ -143,6 +185,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)instructionsSound
+{
+    NSString *soundFilePath = [NSString stringWithFormat:@"%@/afterYouHearTheBeep.mp3", [[NSBundle mainBundle] resourcePath]];;
+    NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
+    
+    SystemSoundID instructionsSound;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &instructionsSound);
+    AudioServicesPlaySystemSound(instructionsSound);
 }
 
 

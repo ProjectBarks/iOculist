@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "EyeExam.h"
 
 @interface FindDistanceVC : UIViewController
+<UIGestureRecognizerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate,AVAudioPlayerDelegate>
+{
+    NSNumber * frameCounter;
+    NSNumber * frameSum;
+}
 
-- (void)finishedListening:(NSString *)hypothesis;
+@property (nonatomic, weak) IBOutlet UIView *previewView;
+@property (nonatomic, retain) AVAudioPlayer *player;
+@property (nonatomic, strong) EyeExam *eyeExam;
+
+-(void) transition;
 
 @end

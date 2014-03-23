@@ -33,22 +33,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (![self.eyeExam.tests containsObject:@"Astigmatism"]) [self performSegueWithIdentifier:@"results" sender:self];
+    NSLog(@"Start Loading");
     
     // Do any additional setup after loading the view.
     [self astigmatismInstructions];
     [self performSelector:@selector(setUp) withObject:self afterDelay:2];
+    NSLog(@"Stop Loading");
+}
+
+- (void)viewWillLayoutSubviews
+{
+    NSLog(@"Will Layout Subviews");
+    if (![self.eyeExam.tests containsObject:@"Astigmatism"]) {
+        [self performSegueWithIdentifier:@"results" sender:self];
+    };
 }
 
 - (void)setUp
 {
+    NSLog(@"Setting up");
     self.listener = [[OEOfflineListener alloc] initWithWords:@[@"YES", @"NO"] VC:self];
     [self performSelectorInBackground:@selector(waitForListener) withObject:self];
+    NSLog(@"Set Up");
 }
 
 - (void)waitForListener
 {
+    NSLog(@"Waiting for Listener");
     while (!self.listener.finished) {}
     
     if ([self.listener.hypothesis isEqualToString:@"YES"]) {
@@ -58,6 +69,7 @@
     }
     
     [self performSelectorOnMainThread:@selector(transition) withObject:self waitUntilDone:YES];
+    NSLog(@"Finished waiting for Listener");
 }
 
 - (void)transition
@@ -99,6 +111,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     [[segue destinationViewController] setEyeExam:self.eyeExam];
+    self.listener.pocketsphinxController = nil;
 }
 
 

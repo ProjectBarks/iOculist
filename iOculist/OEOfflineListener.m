@@ -85,6 +85,7 @@
         self.tries = 1;
     } else {
         self.tries += 1;
+        NSLog(@"Play Repeat Sound");
         [self performSelector:@selector(pleaseRepeat) withObject:self afterDelay:1];
     }
 }
@@ -99,7 +100,7 @@
 
 - (void) pocketsphinxDidStartListening {
 	NSLog(@"Pocketsphinx is now listening.");
-    [self performSelector:@selector(clickSound) withObject:self afterDelay:4];
+    [self performSelector:@selector(clickSound) withObject:self afterDelay:0];
 }
 
 - (void) pocketsphinxDidDetectSpeech {
@@ -139,8 +140,10 @@
     NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
     
     SystemSoundID pleaseRepeat;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &pleaseRepeat);
-    AudioServicesPlaySystemSound(pleaseRepeat);
+    if (pleaseRepeat) {
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &pleaseRepeat);
+        AudioServicesPlaySystemSound(pleaseRepeat);
+    }
 }
 
 - (void)clickSound
@@ -149,8 +152,10 @@
     NSURL *pathURL = [NSURL fileURLWithPath : soundFilePath];
     
     SystemSoundID clickSound;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &clickSound);
-    AudioServicesPlaySystemSound(clickSound);
+    if (clickSound) {
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &clickSound);
+        AudioServicesPlaySystemSound(clickSound);
+    }
 }
 
 @end

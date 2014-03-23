@@ -86,11 +86,14 @@
 {
     [super viewDidLoad];
     
-    if (![self.eyeExam.tests containsObject:@"Acuity"]) [self performSegueWithIdentifier:@"colorBlindness" sender:self];
-    
     [self performSelector:@selector(instructionsSound) withObject:self afterDelay:1];
     // Do any additional setup after loading the view.
     [self performSelector:@selector(setUp) withObject:self afterDelay:3.5];
+}
+
+- (void)viewWillLayoutSubviews
+{
+    if (![self.eyeExam.tests containsObject:@"Acuity"]) [self performSegueWithIdentifier:@"colorBlindness" sender:self];
 }
 
 - (void)setUp
@@ -206,6 +209,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     [[segue destinationViewController] setEyeExam:self.eyeExam];
+    self.listener.pocketsphinxController = nil;
 }
 
 

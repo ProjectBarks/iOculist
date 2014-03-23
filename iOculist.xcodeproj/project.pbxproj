@@ -163,7 +163,6 @@
 		5CEA127218DF0874001DD75C /* glassesGIFVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glassesGIFVC.h; sourceTree = "<group>"; };
 		5CEA127318DF0874001DD75C /* glassesGIFVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glassesGIFVC.m; sourceTree = "<group>"; };
 		5CEA127518DF0B67001DD75C /* astigmatism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = astigmatism.jpg; sourceTree = "<group>"; };
-		5CEA127718DF101D001DD75C /* iOculist.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = iOculist.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +220,6 @@
 		5C2812B818DE3652002257EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CEA127718DF101D001DD75C /* iOculist.xcodeproj */,
 				5CEA126B18DF0442001DD75C /* QuartzCore.framework */,
 				5CEA126918DF0436001DD75C /* MobileCoreServices.framework */,
 				5CEA124518DED733001DD75C /* AssetsLibrary.framework */,
@@ -429,11 +427,6 @@
 			name = GIFs;
 			sourceTree = "<group>";
 		};
-		5CEA127818DF101D001DD75C /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,12 +491,6 @@
 			mainGroup = 5C2812AD18DE3652002257EB;
 			productRefGroup = 5C2812B718DE3652002257EB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5CEA127818DF101D001DD75C /* Products */;
-					ProjectRef = 5CEA127718DF101D001DD75C /* iOculist.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				5C2812B518DE3652002257EB /* iOculist */,

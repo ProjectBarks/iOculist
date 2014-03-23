@@ -533,11 +533,14 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 
 #pragma mark - View lifecycle
 
+- (void)viewWillLayoutSubviews
+{
+    if (![self.eyeExam.tests containsObject:@"Acuity"]) [self performSegueWithIdentifier:@"acuity" sender:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (![self.eyeExam.tests containsObject:@"Acuity"]) [self performSegueWithIdentifier:@"acuity" sender:self];
     
     [self moveBackSound];
     

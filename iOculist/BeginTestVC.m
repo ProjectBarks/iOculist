@@ -52,12 +52,16 @@
     NSArray *buttons = @[self.acuityButton, self.colorBlindnessButton, self.astigmatismButton];
     
     for (UIButton *button in buttons) {
-        if ([sender titleColorForState:UIControlStateNormal] == [UIColor blueColor]) [tests addObject:[button titleForState:UIControlStateNormal]];
+        if ([button titleColorForState:UIControlStateNormal] == [UIColor blueColor]) [tests addObject:[button titleForState:UIControlStateNormal]];
     }
     
     self.eyeExam.tests = tests;
     if (self.eyeExam.tests > 0) {
-        [self performSegueWithIdentifier:@"findDistance" sender:self];
+        if ([self.eyeExam.tests containsObject:@"Acuity"]) {
+            [self performSegueWithIdentifier:@"findDistance" sender:self];
+        } else {
+            [self performSegueWithIdentifier:@"colorBlindness" sender:self];
+        }
     }
 }
 

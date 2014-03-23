@@ -36,11 +36,14 @@
     return self;
 }
 
+- (void)viewWillLayoutSubviews
+{
+    if (![self.eyeExam.tests containsObject:@"Color Blindness"]) [self performSegueWithIdentifier:@"astigmatism" sender:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (![self.eyeExam.tests containsObject:@"Color Blindness"]) [self performSegueWithIdentifier:@"astigmatism" sender:self];
     
     self.score = 0;
     self.images = [[NSMutableDictionary alloc] init];
@@ -159,6 +162,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     [[segue destinationViewController] setEyeExam:self.eyeExam];
+    self.listener.pocketsphinxController = nil;
 }
 
 

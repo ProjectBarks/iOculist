@@ -14,13 +14,43 @@
 		5C2812C618DE3652002257EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2812C518DE3652002257EB /* main.m */; };
 		5C2812CA18DE3652002257EB /* IOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2812C918DE3652002257EB /* IOAppDelegate.m */; };
 		5C2812CD18DE3652002257EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812CB18DE3652002257EB /* Main.storyboard */; };
-		5C2812D018DE3652002257EB /* IOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2812CF18DE3652002257EB /* IOViewController.m */; };
 		5C2812D218DE3652002257EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812D118DE3652002257EB /* Images.xcassets */; };
 		5C2812D918DE3652002257EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2812D818DE3652002257EB /* XCTest.framework */; };
 		5C2812DA18DE3652002257EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2812B918DE3652002257EB /* Foundation.framework */; };
 		5C2812DB18DE3652002257EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2812BD18DE3652002257EB /* UIKit.framework */; };
 		5C2812E318DE3652002257EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812E118DE3652002257EB /* InfoPlist.strings */; };
 		5C2812E518DE3652002257EB /* iOculistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2812E418DE3652002257EB /* iOculistTests.m */; };
+		5C2812F218DE452B002257EB /* cb12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F118DE452B002257EB /* cb12.gif */; };
+		5C28130218DE4710002257EB /* cb45rg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F318DE4710002257EB /* cb45rg.gif */; };
+		5C28130318DE4710002257EB /* cb5rg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F418DE4710002257EB /* cb5rg.gif */; };
+		5C28130418DE4710002257EB /* cb42.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F518DE4710002257EB /* cb42.gif */; };
+		5C28130518DE4710002257EB /* cb26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F618DE4710002257EB /* cb26.gif */; };
+		5C28130618DE4710002257EB /* cb73.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F718DE4710002257EB /* cb73.gif */; };
+		5C28130718DE4710002257EB /* cb16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F818DE4710002257EB /* cb16.gif */; };
+		5C28130818DE4710002257EB /* cb7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812F918DE4710002257EB /* cb7.gif */; };
+		5C28130918DE4710002257EB /* cb5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FA18DE4710002257EB /* cb5.gif */; };
+		5C28130A18DE4710002257EB /* cb45.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FB18DE4710002257EB /* cb45.gif */; };
+		5C28130B18DE4710002257EB /* cb6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FC18DE4710002257EB /* cb6.gif */; };
+		5C28130C18DE4710002257EB /* cb74.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FD18DE4710002257EB /* cb74.gif */; };
+		5C28130D18DE4710002257EB /* cb15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FE18DE4710002257EB /* cb15.gif */; };
+		5C28130E18DE4710002257EB /* cb3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C2812FF18DE4710002257EB /* cb3.gif */; };
+		5C28130F18DE4710002257EB /* cb29.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C28130018DE4710002257EB /* cb29.gif */; };
+		5C28131018DE4710002257EB /* cb8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5C28130118DE4710002257EB /* cb8.gif */; };
+		5C28131918DE47AD002257EB /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28131818DE47AD002257EB /* WelcomeVC.m */; };
+		5C28131C18DE47B9002257EB /* BeginTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28131B18DE47B9002257EB /* BeginTestVC.m */; };
+		5C28131F18DE47C6002257EB /* FindDistanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28131E18DE47C6002257EB /* FindDistanceVC.m */; };
+		5C28132218DE47D0002257EB /* VisualAcuityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28132118DE47D0002257EB /* VisualAcuityVC.m */; };
+		5C28132518DE47DE002257EB /* ColorBlindnessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28132418DE47DE002257EB /* ColorBlindnessVC.m */; };
+		5C28132818DE47F0002257EB /* AstigmatismVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28132718DE47F0002257EB /* AstigmatismVC.m */; };
+		5C28132D18DE5599002257EB /* OEOfflineListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28132C18DE5599002257EB /* OEOfflineListener.m */; };
+		5C28132F18DE55C2002257EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C28132E18DE55C2002257EB /* AudioToolbox.framework */; };
+		5C28133118DE55C9002257EB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C28133018DE55C9002257EB /* AVFoundation.framework */; };
+		5C28133718DE5600002257EB /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C28133318DE5600002257EB /* AcousticModelEnglish.bundle */; };
+		5C28133818DE5600002257EB /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C28133418DE5600002257EB /* AcousticModelSpanish.bundle */; };
+		5C28133918DE5600002257EB /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C28133518DE5600002257EB /* OpenEars.framework */; };
+		5C28133A18DE5600002257EB /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C28133618DE5600002257EB /* Slt.framework */; };
+		5C28133D18DE76F0002257EB /* EyeExam.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28133C18DE76F0002257EB /* EyeExam.m */; };
+		5C28134118DE7AA0002257EB /* ResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C28134018DE7AA0002257EB /* ResultsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +75,52 @@
 		5C2812C818DE3652002257EB /* IOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOAppDelegate.h; sourceTree = "<group>"; };
 		5C2812C918DE3652002257EB /* IOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOAppDelegate.m; sourceTree = "<group>"; };
 		5C2812CC18DE3652002257EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C2812CE18DE3652002257EB /* IOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOViewController.h; sourceTree = "<group>"; };
-		5C2812CF18DE3652002257EB /* IOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOViewController.m; sourceTree = "<group>"; };
 		5C2812D118DE3652002257EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C2812D718DE3652002257EB /* iOculistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOculistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2812D818DE3652002257EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5C2812E018DE3652002257EB /* iOculistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOculistTests-Info.plist"; sourceTree = "<group>"; };
 		5C2812E218DE3652002257EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C2812E418DE3652002257EB /* iOculistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOculistTests.m; sourceTree = "<group>"; };
+		5C2812F118DE452B002257EB /* cb12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb12.gif; sourceTree = "<group>"; };
+		5C2812F318DE4710002257EB /* cb45rg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb45rg.gif; sourceTree = "<group>"; };
+		5C2812F418DE4710002257EB /* cb5rg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb5rg.gif; sourceTree = "<group>"; };
+		5C2812F518DE4710002257EB /* cb42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb42.gif; sourceTree = "<group>"; };
+		5C2812F618DE4710002257EB /* cb26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb26.gif; sourceTree = "<group>"; };
+		5C2812F718DE4710002257EB /* cb73.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb73.gif; sourceTree = "<group>"; };
+		5C2812F818DE4710002257EB /* cb16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb16.gif; sourceTree = "<group>"; };
+		5C2812F918DE4710002257EB /* cb7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb7.gif; sourceTree = "<group>"; };
+		5C2812FA18DE4710002257EB /* cb5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb5.gif; sourceTree = "<group>"; };
+		5C2812FB18DE4710002257EB /* cb45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb45.gif; sourceTree = "<group>"; };
+		5C2812FC18DE4710002257EB /* cb6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb6.gif; sourceTree = "<group>"; };
+		5C2812FD18DE4710002257EB /* cb74.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb74.gif; sourceTree = "<group>"; };
+		5C2812FE18DE4710002257EB /* cb15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb15.gif; sourceTree = "<group>"; };
+		5C2812FF18DE4710002257EB /* cb3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb3.gif; sourceTree = "<group>"; };
+		5C28130018DE4710002257EB /* cb29.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb29.gif; sourceTree = "<group>"; };
+		5C28130118DE4710002257EB /* cb8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cb8.gif; sourceTree = "<group>"; };
+		5C28131718DE47AD002257EB /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		5C28131818DE47AD002257EB /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		5C28131A18DE47B9002257EB /* BeginTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginTestVC.h; sourceTree = "<group>"; };
+		5C28131B18DE47B9002257EB /* BeginTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeginTestVC.m; sourceTree = "<group>"; };
+		5C28131D18DE47C6002257EB /* FindDistanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindDistanceVC.h; sourceTree = "<group>"; };
+		5C28131E18DE47C6002257EB /* FindDistanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindDistanceVC.m; sourceTree = "<group>"; };
+		5C28132018DE47D0002257EB /* VisualAcuityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualAcuityVC.h; sourceTree = "<group>"; };
+		5C28132118DE47D0002257EB /* VisualAcuityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualAcuityVC.m; sourceTree = "<group>"; };
+		5C28132318DE47DE002257EB /* ColorBlindnessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBlindnessVC.h; sourceTree = "<group>"; };
+		5C28132418DE47DE002257EB /* ColorBlindnessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBlindnessVC.m; sourceTree = "<group>"; };
+		5C28132618DE47F0002257EB /* AstigmatismVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstigmatismVC.h; sourceTree = "<group>"; };
+		5C28132718DE47F0002257EB /* AstigmatismVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstigmatismVC.m; sourceTree = "<group>"; };
+		5C28132B18DE5599002257EB /* OEOfflineListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEOfflineListener.h; sourceTree = "<group>"; };
+		5C28132C18DE5599002257EB /* OEOfflineListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEOfflineListener.m; sourceTree = "<group>"; };
+		5C28132E18DE55C2002257EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5C28133018DE55C9002257EB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C28133318DE5600002257EB /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		5C28133418DE5600002257EB /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		5C28133518DE5600002257EB /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		5C28133618DE5600002257EB /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		5C28133B18DE76F0002257EB /* EyeExam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeExam.h; sourceTree = "<group>"; };
+		5C28133C18DE76F0002257EB /* EyeExam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeExam.m; sourceTree = "<group>"; };
+		5C28133F18DE7AA0002257EB /* ResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsVC.h; sourceTree = "<group>"; };
+		5C28134018DE7AA0002257EB /* ResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +128,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C28133118DE55C9002257EB /* AVFoundation.framework in Frameworks */,
+				5C28133A18DE5600002257EB /* Slt.framework in Frameworks */,
+				5C28132F18DE55C2002257EB /* AudioToolbox.framework in Frameworks */,
 				5C2812BC18DE3652002257EB /* CoreGraphics.framework in Frameworks */,
 				5C2812BE18DE3652002257EB /* UIKit.framework in Frameworks */,
 				5C2812BA18DE3652002257EB /* Foundation.framework in Frameworks */,
+				5C28133918DE5600002257EB /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +173,8 @@
 		5C2812B818DE3652002257EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C28133018DE55C9002257EB /* AVFoundation.framework */,
+				5C28132E18DE55C2002257EB /* AudioToolbox.framework */,
 				5C2812B918DE3652002257EB /* Foundation.framework */,
 				5C2812BB18DE3652002257EB /* CoreGraphics.framework */,
 				5C2812BD18DE3652002257EB /* UIKit.framework */,
@@ -112,12 +186,12 @@
 		5C2812BF18DE3652002257EB /* iOculist */ = {
 			isa = PBXGroup;
 			children = (
-				5C2812C818DE3652002257EB /* IOAppDelegate.h */,
-				5C2812C918DE3652002257EB /* IOAppDelegate.m */,
 				5C2812CB18DE3652002257EB /* Main.storyboard */,
-				5C2812CE18DE3652002257EB /* IOViewController.h */,
-				5C2812CF18DE3652002257EB /* IOViewController.m */,
 				5C2812D118DE3652002257EB /* Images.xcassets */,
+				5C28133218DE5600002257EB /* Framework */,
+				5C2812EF18DE4519002257EB /* Resources */,
+				5C28132A18DE5581002257EB /* Model */,
+				5C2812EE18DE36B3002257EB /* Controllers */,
 				5C2812C018DE3652002257EB /* Supporting Files */,
 			);
 			path = iOculist;
@@ -126,6 +200,8 @@
 		5C2812C018DE3652002257EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C2812C818DE3652002257EB /* IOAppDelegate.h */,
+				5C2812C918DE3652002257EB /* IOAppDelegate.m */,
 				5C2812C118DE3652002257EB /* iOculist-Info.plist */,
 				5C2812C218DE3652002257EB /* InfoPlist.strings */,
 				5C2812C518DE3652002257EB /* main.m */,
@@ -150,6 +226,129 @@
 				5C2812E118DE3652002257EB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C2812EE18DE36B3002257EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C28131118DE472B002257EB /* Welcome */,
+				5C28131218DE473E002257EB /* Begin Test */,
+				5C28131318DE4755002257EB /* Find Distance */,
+				5C28131418DE476C002257EB /* Visual Acuity */,
+				5C28131518DE4774002257EB /* Color Blindness */,
+				5C28131618DE477A002257EB /* Astigmatism */,
+				5C28133E18DE7A89002257EB /* Results */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5C2812EF18DE4519002257EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C2812F318DE4710002257EB /* cb45rg.gif */,
+				5C2812F418DE4710002257EB /* cb5rg.gif */,
+				5C2812F518DE4710002257EB /* cb42.gif */,
+				5C2812F618DE4710002257EB /* cb26.gif */,
+				5C2812F718DE4710002257EB /* cb73.gif */,
+				5C2812F818DE4710002257EB /* cb16.gif */,
+				5C2812F918DE4710002257EB /* cb7.gif */,
+				5C2812FA18DE4710002257EB /* cb5.gif */,
+				5C2812FB18DE4710002257EB /* cb45.gif */,
+				5C2812FC18DE4710002257EB /* cb6.gif */,
+				5C2812FD18DE4710002257EB /* cb74.gif */,
+				5C2812FE18DE4710002257EB /* cb15.gif */,
+				5C2812FF18DE4710002257EB /* cb3.gif */,
+				5C28130018DE4710002257EB /* cb29.gif */,
+				5C28130118DE4710002257EB /* cb8.gif */,
+				5C2812F118DE452B002257EB /* cb12.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5C28131118DE472B002257EB /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				5C28131718DE47AD002257EB /* WelcomeVC.h */,
+				5C28131818DE47AD002257EB /* WelcomeVC.m */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		5C28131218DE473E002257EB /* Begin Test */ = {
+			isa = PBXGroup;
+			children = (
+				5C28131A18DE47B9002257EB /* BeginTestVC.h */,
+				5C28131B18DE47B9002257EB /* BeginTestVC.m */,
+			);
+			name = "Begin Test";
+			sourceTree = "<group>";
+		};
+		5C28131318DE4755002257EB /* Find Distance */ = {
+			isa = PBXGroup;
+			children = (
+				5C28131D18DE47C6002257EB /* FindDistanceVC.h */,
+				5C28131E18DE47C6002257EB /* FindDistanceVC.m */,
+			);
+			name = "Find Distance";
+			sourceTree = "<group>";
+		};
+		5C28131418DE476C002257EB /* Visual Acuity */ = {
+			isa = PBXGroup;
+			children = (
+				5C28132018DE47D0002257EB /* VisualAcuityVC.h */,
+				5C28132118DE47D0002257EB /* VisualAcuityVC.m */,
+			);
+			name = "Visual Acuity";
+			sourceTree = "<group>";
+		};
+		5C28131518DE4774002257EB /* Color Blindness */ = {
+			isa = PBXGroup;
+			children = (
+				5C28132318DE47DE002257EB /* ColorBlindnessVC.h */,
+				5C28132418DE47DE002257EB /* ColorBlindnessVC.m */,
+			);
+			name = "Color Blindness";
+			sourceTree = "<group>";
+		};
+		5C28131618DE477A002257EB /* Astigmatism */ = {
+			isa = PBXGroup;
+			children = (
+				5C28132618DE47F0002257EB /* AstigmatismVC.h */,
+				5C28132718DE47F0002257EB /* AstigmatismVC.m */,
+			);
+			name = Astigmatism;
+			sourceTree = "<group>";
+		};
+		5C28132A18DE5581002257EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C28132B18DE5599002257EB /* OEOfflineListener.h */,
+				5C28132C18DE5599002257EB /* OEOfflineListener.m */,
+				5C28133B18DE76F0002257EB /* EyeExam.h */,
+				5C28133C18DE76F0002257EB /* EyeExam.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C28133218DE5600002257EB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5C28133318DE5600002257EB /* AcousticModelEnglish.bundle */,
+				5C28133418DE5600002257EB /* AcousticModelSpanish.bundle */,
+				5C28133518DE5600002257EB /* OpenEars.framework */,
+				5C28133618DE5600002257EB /* Slt.framework */,
+			);
+			name = Framework;
+			path = ../../../../Downloads/OpenEarsDistribution/Framework;
+			sourceTree = "<group>";
+		};
+		5C28133E18DE7A89002257EB /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				5C28133F18DE7AA0002257EB /* ResultsVC.h */,
+				5C28134018DE7AA0002257EB /* ResultsVC.m */,
+			);
+			name = Results;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +428,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2812F218DE452B002257EB /* cb12.gif in Resources */,
+				5C28130518DE4710002257EB /* cb26.gif in Resources */,
+				5C28130B18DE4710002257EB /* cb6.gif in Resources */,
+				5C28130718DE4710002257EB /* cb16.gif in Resources */,
+				5C28130E18DE4710002257EB /* cb3.gif in Resources */,
+				5C28130418DE4710002257EB /* cb42.gif in Resources */,
+				5C28130218DE4710002257EB /* cb45rg.gif in Resources */,
 				5C2812D218DE3652002257EB /* Images.xcassets in Resources */,
+				5C28130D18DE4710002257EB /* cb15.gif in Resources */,
+				5C28130C18DE4710002257EB /* cb74.gif in Resources */,
+				5C28133818DE5600002257EB /* AcousticModelSpanish.bundle in Resources */,
+				5C28130A18DE4710002257EB /* cb45.gif in Resources */,
 				5C2812C418DE3652002257EB /* InfoPlist.strings in Resources */,
+				5C28130318DE4710002257EB /* cb5rg.gif in Resources */,
+				5C28133718DE5600002257EB /* AcousticModelEnglish.bundle in Resources */,
+				5C28130818DE4710002257EB /* cb7.gif in Resources */,
+				5C28130918DE4710002257EB /* cb5.gif in Resources */,
+				5C28130618DE4710002257EB /* cb73.gif in Resources */,
+				5C28130F18DE4710002257EB /* cb29.gif in Resources */,
 				5C2812CD18DE3652002257EB /* Main.storyboard in Resources */,
+				5C28131018DE4710002257EB /* cb8.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +467,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C28131918DE47AD002257EB /* WelcomeVC.m in Sources */,
+				5C28132518DE47DE002257EB /* ColorBlindnessVC.m in Sources */,
+				5C28133D18DE76F0002257EB /* EyeExam.m in Sources */,
 				5C2812CA18DE3652002257EB /* IOAppDelegate.m in Sources */,
+				5C28131F18DE47C6002257EB /* FindDistanceVC.m in Sources */,
+				5C28134118DE7AA0002257EB /* ResultsVC.m in Sources */,
+				5C28132218DE47D0002257EB /* VisualAcuityVC.m in Sources */,
+				5C28131C18DE47B9002257EB /* BeginTestVC.m in Sources */,
+				5C28132D18DE5599002257EB /* OEOfflineListener.m in Sources */,
+				5C28132818DE47F0002257EB /* AstigmatismVC.m in Sources */,
 				5C2812C618DE3652002257EB /* main.m in Sources */,
-				5C2812D018DE3652002257EB /* IOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,9 +602,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sampringle/Downloads/OpenEarsDistribution/Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOculist/iOculist-Prefix.pch";
 				INFOPLIST_FILE = "iOculist/iOculist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +620,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sampringle/Downloads/OpenEarsDistribution/Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOculist/iOculist-Prefix.pch";
 				INFOPLIST_FILE = "iOculist/iOculist-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
